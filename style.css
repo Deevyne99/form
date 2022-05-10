@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+
+}
+.step{
+    display: none;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    
+    padding: 30px 40px;
+    justify-content: center;
+    align-items: center;
+}
+.step.active.step-1,
+.step.active.step-2,
+.step.active.step-3{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+.next-btn,
+.prev-btn,
+.submit{
+    padding: 10px;
+    width: 90px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    background-color: #2271ff;
+    border: none;
+    color: white;
+}
+.prev-btn{
+    float: left;
+}
+.step.step-1 input,
+.step.step-2 input,
+.step.step-3 input
+{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+.step.step-1 label,
+.step.step-2 label, 
+.step.step-3 label {
+    display: block;
+    margin-top: 10px;
+}
